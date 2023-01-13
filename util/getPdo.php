@@ -2,7 +2,6 @@
     try {
         $pdo = new PDO($dsn, $dbUser, $dbPass);
         if ($pdo) {
-            echo "Verbinding is gelukt";
             return $pdo;
         } else {
             echo "Interne server-error";
